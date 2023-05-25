@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <form class="container">
+        <h2 style="text-align: center">Form Validation</h2>
+
+        <label for="firstName lastName">Name</label>
+        <input type="text" id="firstName" placeholder="First Name" required />
+        <input
+          type="text"
+          id="lastName"
+          placeholder="Last Name"
+          required
+        /><br />
+
+        <label for="">Address</label>
+        <input type="text" id="city" placeholder="City, State" />
+        <input type="text" id="zip" placeholder="Zip code" />
+        <br />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="#### ### ###" /><br />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" /> <br />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" /><br />
+
+        <label for="msg">Message</label>
+        <textarea
+          name=""
+          id="msg"
+          cols="30"
+          rows="10"
+          style="border-radius: 10px"
+          placeholder="(optional)"
+        ></textarea>
+        <br />
+
+        <button type="submit" id="btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="error">
+      Error message:
+      <p id="err"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
